@@ -1,95 +1,68 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image'
+import logoRecruitable from '/public/img/logo.webp'
+import headlineText from '/public/img/headline.webp'
+import heroImg from '/public/img/heroimg.webp'
+import { Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({ 
+  subsets: ['latin'],
+  display: 'swap',
+ })
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div id="hero">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm p-5">
             <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={logoRecruitable}
+              alt="Picture of the author"
+              width={300} 
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="row">
+          <div className="col p-5">
+            <div>
+                <Image
+                src={headlineText}
+                alt="Picture of the author"
+                width={500}
+              />
+            </div>
+            <p>Swipe, terhubung dan mulai karirmu di Industri Pariwisata!</p>
+          </div>
+          <div className="col">               
+            <Image
+                src={heroImg}
+                alt="Picture of the author"
+                width={600}
+            />
+          </div>
+        </div> 
+        <div className="row text-center lwrn_win">
+          <div className="col-12">
+            <h3>MENANGKAN PROGRAM<br/><span>PELATIHAN EKSKLUSIF</span><br/>BERSAMA LAWRENCE BENSON</h3>
+          </div>
+          <div className="col-12">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GqxhlYPwAIU?si=DpQll0ttZTLiMBm9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          {/* <div className="col-12">
+          Text Lawrence 2
+          </div> */}
+          {/* <div className="col-12">
+          <div className="row">
+            <div className="col">Text 1</div>
+            <div className="col">Text 2</div>            
+          </div>
+          <div className="col-12">
+          Text Lawrence 3
+          </div>
+          </div>           */}
+          </div>       
+      </div>
     </div>
   );
 }
