@@ -1,3 +1,17 @@
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
 #hero {
   background-color: #1c4676;
 }
@@ -10,15 +24,16 @@ color: #fff;
 .lwrn_win {
   width: 80%;
   margin: 0 auto 0;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .lwrn_win h3 {
   color: #fff;  
   font-weight: bold;
-  line-height: 50px;
+  line-height: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-size: 20px;
 }
 
 .lwrn_win h3 > span {
@@ -26,4 +41,18 @@ color: #fff;
   padding: 10px;
   border-radius: 30px 30px 30px;
   font-weight: bold;
+}
+
+.lwrn_win2 {
+  color: #fff;
+  font-size: 17px;
+  padding: 50px 0;
+}
+
+.lwrn_benefit {
+  color: #fff;
+  width: 70%;
+  margin: 0 auto 0;
+  padding-top: 0px;
+  padding-bottom: 15px;  
 }
