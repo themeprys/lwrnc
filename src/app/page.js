@@ -6,6 +6,8 @@ import iconOne from '/public/img/icon_1.webp'
 import iconTwo from '/public/img/icon_2.webp'
 import appThumb from '/public/img/app.webp'
 import appFitur from '/public/img/fitur.webp'
+import iconYoutube from '/public/img/yt.webp'
+import iconInstagram from '/public/img/ig.webp'
 
 import { ReactElement } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -178,19 +180,40 @@ export default function Home() {
       <h3>MULAI KARIRMU HARI INI!</h3>
       <a href="https://play.google.com/store/apps/details?id=com.recruit_able.app.twa&pcampaignid=web_share" className='btn btn-lg btn-recruit'>Daftar Sekarang</a>
       <p className='lwrn_ios'>*iOS version Coming Soon</p>
-      </div>   
-      {/* <div id="lwrn_footer">
+      </div>
+      <div id="lwrn_footer" className='text-center'>
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
-              <ul>
-                <li><a href="#"><FontAwesomeIcon icon="coffee" /></a></li>
-                <li><a href="#">YouTube</a></li>                
-              </ul>
+              <a href="https://www.instagram.com/recruit.able" target="_blank">
+                  <Image
+                    src={iconInstagram}
+                    alt="Recruitable"
+                    width={100}
+                    sizes="100vw"
+                    style={{
+                      width: '10%',
+                      height: 'auto',
+                    }}
+                  />                  
+                  </a>
+                  <a href="https://www.youtube.com/@RecruitABLEapp" target="_blank">
+                  <Image
+                    src={iconYoutube}
+                    alt="Recruitable"
+                    width={100}
+                    sizes="100vw"
+                    style={{
+                      width: '10%',
+                      height: 'auto',
+                    }}
+                  />                  
+                  </a>                  
             </div>
+            <div className='lwrn_copy'>Copyright &copy; RecruitABLE 2024</div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
