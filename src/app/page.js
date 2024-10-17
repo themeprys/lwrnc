@@ -143,7 +143,7 @@ export default function Home() {
                 <p>Rekrutmen di industri pariwisata menjadi lebih mudah dengan menghubungkan talenta dan pemberi kerja secara efektif, memastikan kesesuaian yang tepat dalam industri yang dinamis ini</p>
 
           </div>
-        </div>432
+        </div>
       </div>
     </div>
     <div id='lwrn_fitur'>
@@ -179,7 +179,7 @@ export default function Home() {
       <a href="https://play.google.com/store/apps/details?id=com.recruit_able.app.twa&pcampaignid=web_share" className='btn btn-lg btn-recruit'>Daftar Sekarang</a>
       <p className='lwrn_ios'>*iOS version Coming Soon</p>
       </div>   
-      <div id="lwrn_footer">
+      {/* <div id="lwrn_footer">
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
