@@ -5,6 +5,7 @@ import heroImg from '/public/img/heroimg.webp'
 import iconOne from '/public/img/icon_1.webp'
 import iconTwo from '/public/img/icon_2.webp'
 import appThumb from '/public/img/app.webp'
+import appFitur from '/public/img/fitur.webp'
 
 import { Montserrat } from 'next/font/google'
 
@@ -140,6 +141,38 @@ export default function Home() {
         </div>
       </div>
     </div>
+    <div id='lwrn_fitur'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 text-center pt-5'>
+          <Image
+                src={appFitur}
+                alt="Recruitable"
+                width={600}
+                sizes="100vw"
+                style={{
+                  width: '60%',
+                  height: 'auto',
+                }}
+            />
+          </div>
+          <div className='col-12 text-center'>
+                <h3>FITUR UTAMA</h3>
+                <div className='lwrn_hr'>&nbsp;</div>
+                <h4>Swipe untuk matching</h4>
+                <p>Sistem matching yang cepat dan intuitif yang menghubungkan pemberi kerja dengan kandidat yang sesuai secara instan</p>
+                <h4>Ngobrol langsung di aplikasi</h4>
+                <p>Ngobrol langsung dengan pencari kerja dan pemberi kerja secara instan</p>
+                <h4>Wawancara Video</h4>
+                <p>Wawancara video tatap muka yang bisa dijadwalkan dari mana saja di seluruh Indonesia</p>                
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div id='lwrn_closing' className='text-center'>
+      <h3>MULAI KARIRMU HARI INI!</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.recruit_able.app.twa&pcampaignid=web_share" className='btn btn-lg btn-recruit'>Daftar Sekarang</a>
+      </div>   
     </>
   );
 }

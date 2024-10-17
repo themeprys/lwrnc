@@ -71,3 +71,46 @@ color: #fff;
   margin: 30px auto 30px;
 
 }
+
+#lwrn_fitur {
+  padding: 0 20px 50px;
+}
+
+#lwrn_fitur h3 {
+  color: #1c4676;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#lwrn_fitur h4 {
+  color: #f18006;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#lwrn_closing {
+  min-height: 400px;
+  background: url(/img/bg.webp) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 15vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#lwrn_closing h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.btn-recruit {
+  background: #f18006;
+  color: #fff;
+  border: 1px solid #fff;
+}
