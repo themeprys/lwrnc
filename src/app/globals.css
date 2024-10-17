@@ -114,3 +114,14 @@ color: #fff;
   color: #fff;
   border: 1px solid #fff;
 }
+
+p.lwrn_ios {
+  margin-top:10px;
+  font-size: 12px !important;
+}
+
+#lwrn_closing p.lwrn_ios {
+  margin-top:10px;
+  font-size: 12px !important;
+  color: #fff;
+}

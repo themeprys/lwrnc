@@ -57,8 +57,10 @@ export default function Home() {
               />
             </div>
             <p>Swipe, terhubung dan mulai karirmu di Industri Pariwisata!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.recruit_able.app.twa&pcampaignid=web_share" className='btn btn-lg btn-recruit'>Daftar Sekarang</a>
+            <p className='lwrn_ios'>*iOS version Coming Soon</p>
           </div>
-          <div className="col-12 col-md-6">               
+          <div className="col-12 col-md-6 pt-5">               
             <Image
                 src={heroImg}
                 alt="Recruitable"
@@ -172,6 +174,7 @@ export default function Home() {
     <div id='lwrn_closing' className='text-center'>
       <h3>MULAI KARIRMU HARI INI!</h3>
       <a href="https://play.google.com/store/apps/details?id=com.recruit_able.app.twa&pcampaignid=web_share" className='btn btn-lg btn-recruit'>Daftar Sekarang</a>
+      <p className='lwrn_ios'>*iOS version Coming Soon</p>
       </div>   
     </>
   );
