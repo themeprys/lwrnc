@@ -4,7 +4,7 @@ import headlineText from '/public/img/headline.webp'
 import heroImg from '/public/img/heroimg.webp'
 import iconOne from '/public/img/icon_1.webp'
 import iconTwo from '/public/img/icon_2.webp'
-
+import appThumb from '/public/img/app.webp'
 
 import { Montserrat } from 'next/font/google'
 
@@ -23,6 +23,7 @@ const montserrat = Montserrat({
 
 export default function Home() {
   return (
+    <>
     <div id="hero">
       <div className="container">
         <div className="row">
@@ -65,8 +66,7 @@ export default function Home() {
                 style={{
                   width: '100%',
                   height: 'auto',
-                }}              
-  
+                }}
             />
           </div>
         </div> 
@@ -115,6 +115,31 @@ export default function Home() {
                 Ini adalah kesempatan emas yang akan membawamu ke tempat-tempat terbaik di industri pariwisata di Bali!
         </div>
       </div>
-    </div>       
+    </div>
+    <div id='lwrn_info'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 text-center pt-5'>
+          <Image
+                src={appThumb}
+                alt="Recruitable"
+                width={600}
+                sizes="100vw"
+                style={{
+                  width: '60%',
+                  height: 'auto',
+                }}
+            />
+          </div>
+          <div className='col-12 text-center'>
+                <h3>REKRUTMEN KHUSUS INDUSTRI PARIWISATA</h3>
+                <div className='lwrn_hr'>&nbsp;</div>
+                <p>Rekrutmen di industri pariwisata menjadi lebih mudah dengan menghubungkan talenta dan pemberi kerja secara efektif, memastikan kesesuaian yang tepat dalam industri yang dinamis ini</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
   );
 }
