@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import logoRecruitable from '/public/img/logo.webp'
 import headlineText from '/public/img/headline.webp'
-import heroImg from '/public/img/heroimg.webp'
+import heroImg from '/public/img/canggu.webp'
 import iconOne from '/public/img/icon_1.webp'
 import iconTwo from '/public/img/icon_2.webp'
 import appThumb from '/public/img/app.webp'
 import appFitur from '/public/img/fitur.webp'
+
+import { ReactElement } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Montserrat } from 'next/font/google'
 
@@ -75,12 +78,12 @@ export default function Home() {
         </div> 
         <div className="row text-center lwrn_win">
           <div className="col-12">
-            <h3>MENANGKAN PROGRAM<br/><span>PELATIHAN EKSKLUSIF</span><br/>BERSAMA LAWRENCE BENSON</h3>
+            <h3>MENANGKAN PROGRAM<br/><span>PELATIHAN EKSKLUSIF</span><br/>BERSAMA LAURENCE BENSON</h3>
           </div>
           </div>       
       </div>
       <div className='container-fluid p-0'>
-      < iframe width="100%" height="350" src="https://www.youtube.com/embed/GqxhlYPwAIU?si=DpQll0ttZTLiMBm9"  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      < iframe width="100%" height="350" src="https://www.youtube.com/embed/GqxhlYPwAIU?si=DpQll0ttZTLiMBm9"  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
       <div className='container'>
         <div className="col-12 text-center lwrn_win2">
@@ -98,7 +101,7 @@ export default function Home() {
                 }}              
   
             />
-          <h4 className='pt-4'>Pelatihan eksklusif dengan Lawrence Benson</h4>      
+          <h4 className='pt-4'>Pelatihan eksklusif dengan Laurence Benson</h4>      
         </div>
         <div className="col-12 text-center lwrn_benefit">
         <Image
@@ -140,7 +143,7 @@ export default function Home() {
                 <p>Rekrutmen di industri pariwisata menjadi lebih mudah dengan menghubungkan talenta dan pemberi kerja secara efektif, memastikan kesesuaian yang tepat dalam industri yang dinamis ini</p>
 
           </div>
-        </div>
+        </div>432
       </div>
     </div>
     <div id='lwrn_fitur'>
@@ -176,6 +179,18 @@ export default function Home() {
       <a href="https://play.google.com/store/apps/details?id=com.recruit_able.app.twa&pcampaignid=web_share" className='btn btn-lg btn-recruit'>Daftar Sekarang</a>
       <p className='lwrn_ios'>*iOS version Coming Soon</p>
       </div>   
+      <div id="lwrn_footer">
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <ul>
+                <li><a href="#"><FontAwesomeIcon icon="coffee" /></a></li>
+                <li><a href="#">YouTube</a></li>                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
