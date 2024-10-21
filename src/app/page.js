@@ -8,6 +8,8 @@ import appThumb from '/public/img/app.webp'
 import appFitur from '/public/img/fitur.webp'
 import iconYoutube from '/public/img/yt.webp'
 import iconInstagram from '/public/img/ig.webp'
+import iconTiktok from '/public/img/tiktok.webp'
+import iconWeb from '/public/img/web.webp'
 
 import { ReactElement } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -80,14 +82,16 @@ export default function Home() {
         </div> 
         <div className="row text-center lwrn_win">
           <div className="col-12">
-            <h3>MENANGKAN PROGRAM<br/><span>PELATIHAN EKSKLUSIF</span><br/>BERSAMA LAURENCE BENSON</h3>
+            <h3 className="pb-2">RASAKAN MUDAHNYA<br/><span>CARI KERJA</span></h3>
+            <p className="pb-5">Simak Laurence Benson memandu kamu step by step membuat profil di RecruitAble hanya dengan beberapa langkah!</p>
+            {/* <h3>MENANGKAN PROGRAM<br/><span>PELATIHAN EKSKLUSIF</span><br/>BERSAMA LAURENCE BENSON</h3> */}
           </div>
           </div>       
       </div>
-      <div className='container-fluid p-0'>
+      <div className='container-fluid p-0 pb-5'>
       < iframe width="100%" height="350" src="https://www.youtube.com/embed/GqxhlYPwAIU?si=DpQll0ttZTLiMBm9"  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
-      <div className='container'>
+      {/* <div className='container'>
         <div className="col-12 text-center lwrn_win2">
         Download aplikasi Recruit<strong>ABLE</strong> dan dapatkan kesempatan menjadi salah satu dari <span>5 orang beruntung</span> yang terpilih mengikuti 
         </div>
@@ -122,7 +126,7 @@ export default function Home() {
         <div className="col-12 text-center lwrn_win2 px-5 pt-0">
                 Ini adalah kesempatan emas yang akan membawamu ke tempat-tempat terbaik di industri pariwisata di Bali!
         </div>
-      </div>
+      </div> */}
     </div>
     <div id='lwrn_info'>
       <div className='container'>
@@ -197,6 +201,18 @@ export default function Home() {
                     }}
                   />                  
                   </a>
+                  <a href="https://www.tiktok.com/@recruit_able" target="_blank">
+                  <Image
+                    src={iconTiktok}
+                    alt="Recruitable"
+                    width={100}
+                    sizes="100vw"
+                    style={{
+                      width: '10%',
+                      height: 'auto',
+                    }}
+                  />                  
+                  </a>
                   <a href="https://www.youtube.com/@RecruitABLEapp" target="_blank">
                   <Image
                     src={iconYoutube}
@@ -208,7 +224,19 @@ export default function Home() {
                       height: 'auto',
                     }}
                   />                  
-                  </a>                  
+                  </a>
+                  <a href="https://www.recruit-able.com" target="_blank">
+                  <Image
+                    src={iconWeb}
+                    alt="Recruitable"
+                    width={100}
+                    sizes="100vw"
+                    style={{
+                      width: '10%',
+                      height: 'auto',
+                    }}
+                  />                  
+                  </a>                                                      
             </div>
             <div className='lwrn_copy'>Copyright &copy; RecruitABLE 2024</div>
           </div>
